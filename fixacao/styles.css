@@ -7,7 +7,7 @@
   header {
     background-color: #4986b8;
     color: white;
-    height: 40px;
+    height: 5vh;
     padding: 20px;
     width: 100%;
   }
@@ -16,7 +16,6 @@
     height: 77vh;
     max-width: 800px;
     display: flex;
-    flex-direction: row;
     margin: 20px auto;
     gap: 10px;
   }
@@ -45,4 +44,32 @@
     color: white;
     padding: 20px;
     width: 100%;
+    height: 5vh;
+  }
+
+  @media screen and (max-device-width: 480px) {
+    header{
+      text-align: center;
+    }  
+    
+    main{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        max-width: none;
+        min-height: 100vh;
+        position: static;
+        height: 100vh;
+        
+      }
+
+      main aside,
+      main section {
+        width: 90vw;
+      }
+
+      footer{
+        position: fixed;
+      }
+
   }
